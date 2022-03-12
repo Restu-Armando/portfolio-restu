@@ -1,0 +1,215 @@
+/* CSS Navbar */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700|Fredoka+One);
+.navbar-brand {
+  font-family: "Fredoka One";
+}
+.nav-link a {
+  font-family: "Roboto";
+}
+/* End CSS Navbar */
+
+html::-webkit-scrollbar {
+    width: 10px;
+    background: rgb(136, 136, 136);
+  }
+
+html::-webkit-scrollbar-track {
+    background: rgb(179, 177, 177);
+    border-radius: 25px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136);
+    border-radius: 25px;
+  }
+
+html::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100);
+    border-radius: 25px;
+  }
+
+html::-webkit-scrollbar-thumb:active {
+    background: rgb(68, 68, 68);
+    border-radius: 25px;
+  }
+/* CSS social */
+.social a {
+  -webkit-transition: background-color 0.7s ease-out;
+  -moz-transition: background-color 0.7s ease-out;
+  -o-transition: background-color 0.7s ease-out;
+  transition: background-color 0.7s ease-out;
+  padding: 10px 3px 10px 3px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+.social a:hover {
+  background-color: gray;
+}
+
+.social {
+  margin-left: 32.33%;
+  padding-bottom: 150px;
+}
+/* End CSS social */
+
+.jumbotron {
+  padding-top: 7rem;
+  background-color: #a2d9ff;
+}
+
+/*#profil {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+}
+*/
+#project {
+  background-color: #a2d9ff;
+}
+
+#contact {
+  background-color: #a2d9ff;
+  font-family: 'lato',sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+section {
+  padding-top: 5rem;
+
+}
+/*CSS HOVER NAVBAR*/
+/* NAVIGATION */
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px 0;
+  box-shadow: 0px 5px 0px #dedede;
+}
+div ul {
+  list-style: none;
+  text-align: center;
+}
+div ul li {
+  display: inline-block;
+}
+div ul li a {
+  /*display: block;*/
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+div ul li a,
+div ul li a:after,
+div ul li a:before {
+  transition: all .5s;
+}
+div ul li a:hover {
+  color: #051367;
+}
+
+
+/* stroke */
+div.navbar-nav ul li a {
+  position: relative;
+}
+div.navbar-nav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #051367;
+  height: 1px;
+}
+div.navbar-nav ul li a:hover:after {
+  width: 100%;
+}
+
+/*CSS Waves*/
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+.inner-header {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
